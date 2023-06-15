@@ -42,9 +42,9 @@ function game() {
     }
     console.log(playRound(playerSelection, computerSelection));
   }
-  if (playerScore > computerScore) {
+  if (playerScore >= 3 || playerScore > computerScore) {
     return "You Won!";
-  } else if (computerScore > playerScore) {
+  } else if (computerScore >= 3 || computerScore > playerScore) {
     return "You Lost";
   } else return "It's a tie";
 }

@@ -25,9 +25,18 @@
                 <h2>Laser Snips (Scissors)</h2>
                 <p>Sharpest and fastest pair forged in a neutron star's orbit.</p>
             </section>
-            <button id="rock">Quazar Boulder</button>
-            <button id="paper">Astro Wrap</button>
-            <button id="scissors">Laser Snips</button>
+            <button id="rock" data-choice="rock">
+                Quazar Boulder
+                <img src="/img/rock.png" alt="rock" />
+            </button>
+            <button id="paper" data-choice="paper">
+                Astro Wrap
+                <img src="img/paper.png" alt="paper" />
+            </button>
+            <button id="scissors" data-choice="scissors">
+                Laser Snips
+                <img src="/img/scissors.png" alt="scissors" />
+            </button>
 
             <div>player score = <span class="player-score"></span></div>
             <div>computer score = <span class="computer-score"></span></div>
@@ -37,7 +46,7 @@
             <h1 class="winner"></h1>
         </div>
         <footer>
-            <p>&copy; 2023 ncontin. All rights reserved.</p>
+            <p class="copyright">&copy; 2023 ncontin. All rights reserved.</p>
         </footer>
     </body>
 </html>

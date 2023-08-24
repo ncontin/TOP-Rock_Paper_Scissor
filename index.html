@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock, Paper, Scissors</title>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock, Paper, Scissors</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 class="header title">Welcome to Rock Paper Scissors</h1>
+        <h2 class="header sub-title">The Galactic Showdown!</h2>
+        <div class="container">
+            <section class="element">
+                <h2>Quazar Boulder (Rock)</h2>
+                <p>Unbreakable force of nature from a collapsing star.</p>
+            </section>
 
-      <div>player score = <span class="player-score"></span></div>
-      <div>computer score = <span class="computer-score"></span></div>
-      <br>
-      <div class="choice"></div>
-      <div class="choice-result"></div>
-      <h1 class="winner"></h1>
-    </div>
-  </body>
+            <section class="element">
+                <h2>Astro Wrap (Paper)</h2>
+                <p>Delicate yet potent material from sentient space vines.</p>
+            </section>
+
+            <section class="element">
+                <h2>Laser Snips (Scissors)</h2>
+                <p>Sharpest and fastest pair forged in a neutron star's orbit.</p>
+            </section>
+            <button id="rock">Quazar Boulder</button>
+            <button id="paper">Astro Wrap</button>
+            <button id="scissors">Laser Snips</button>
+
+            <div>player score = <span class="player-score"></span></div>
+            <div>computer score = <span class="computer-score"></span></div>
+            <br />
+            <div class="choice"></div>
+            <div class="choice-result"></div>
+            <h1 class="winner"></h1>
+        </div>
+        <footer>
+            <p>&copy; 2023 ncontin. All rights reserved.</p>
+        </footer>
+    </body>
 </html>

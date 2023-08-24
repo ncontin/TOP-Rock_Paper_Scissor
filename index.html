@@ -5,48 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rock, Paper, Scissors</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1 class="header title">Welcome to Rock Paper Scissors</h1>
-        <h2 class="header sub-title">The Galactic Showdown!</h2>
-        <div class="container">
-            <section class="element">
-                <h2>Quazar Boulder (Rock)</h2>
-                <p>Unbreakable force of nature from a collapsing star.</p>
-            </section>
+        <div id="container">
+            <div id="header">
+                <h1 class="header title">Welcome to Rock Paper Scissors</h1>
+                <h2 class="header sub-title">The Galactic Showdown!</h2>
+            </div>
+            <main id="mainContent">
+                <section class="element">
+                    <h2>Quazar Boulder (Rock)</h2>
+                    <p>Unbreakable force of nature from a collapsing star.</p>
+                </section>
 
-            <section class="element">
-                <h2>Astro Wrap (Paper)</h2>
-                <p>Delicate yet potent material from sentient space vines.</p>
-            </section>
+                <section class="element">
+                    <h2>Astro Wrap (Paper)</h2>
+                    <p>Delicate yet potent material from sentient space vines.</p>
+                </section>
 
-            <section class="element">
-                <h2>Laser Snips (Scissors)</h2>
-                <p>Sharpest and fastest pair forged in a neutron star's orbit.</p>
-            </section>
-            <button id="rock" data-choice="rock">
-                Quazar Boulder
-                <img src="/img/rock.png" alt="rock" />
-            </button>
-            <button id="paper" data-choice="paper">
-                Astro Wrap
-                <img src="img/paper.png" alt="paper" />
-            </button>
-            <button id="scissors" data-choice="scissors">
-                Laser Snips
-                <img src="/img/scissors.png" alt="scissors" />
-            </button>
+                <section class="element">
+                    <h2>Laser Snips (Scissors)</h2>
+                    <p>Sharpest and fastest pair forged in a neutron star's orbit.</p>
+                </section>
+                <button id="rock" data-choice="rock">
+                    Quazar Boulder
+                    <img src="/img/rock.png" alt="rock" />
+                </button>
+                <button id="paper" data-choice="paper">
+                    Astro Wrap
+                    <img src="img/paper.png" alt="paper" />
+                </button>
+                <button id="scissors" data-choice="scissors">
+                    Laser Snips
+                    <img src="/img/scissors.png" alt="scissors" />
+                </button>
 
-            <div>player score = <span class="player-score"></span></div>
-            <div>computer score = <span class="computer-score"></span></div>
-            <br />
-            <div class="choice"></div>
-            <div class="choice-result"></div>
-            <h1 class="winner"></h1>
+                <div>player score = <span class="player-score"></span></div>
+                <div>computer score = <span class="computer-score"></span></div>
+                <br />
+                <div class="choice"></div>
+                <div class="choice-result"></div>
+                <h1 class="winner"></h1>
+                <button id="restart">Restart</button>
+            </main>
+            <footer id="footer">
+                <p class="copyright">&copy; 2023 ncontin. All rights reserved.</p>
+            </footer>
         </div>
-        <footer>
-            <p class="copyright">&copy; 2023 ncontin. All rights reserved.</p>
-        </footer>
     </body>
 </html>
+
+<!-- //Quazar Boulder (Rock):
+Deep within the ancient asteroid fields of the Nebula Cluster, a unique phenomenon occurred. A massive star went supernova, its core collapsing into an ultra-dense Quazar Boulder. This cosmic relic absorbed the star's energy, becoming an unbreakable force of nature. It's said that those who wield the Quazar Boulder channel the power of a thousand suns, making it an unstoppable choice in the Galactic Showdown.
+
+Astro Wrap (Paper):
+Originating from the sentient forests of the Moonlit Glade planet, the Astro Wrap is a delicate yet potent contender. It's crafted from the fibers of enchanted space vines that can manipulate gravity. These vines are meticulously intertwined to create a versatile and resilient material that can wrap around opponents with finesse. The Astro Wrap's magical properties allow it to adapt to any situation, making it a formidable choice for those seeking tactical advantage.
+
+Laser Snips (Scissors):
+Forged in the heart of the Techno-Forge, a forge that orbits a neutron star, the Laser Snips are a marvel of precision engineering. Master robotic artisans spent eons perfecting their craftsmanship to create the sharpest and fastest pair of scissors in the cosmos. The Laser Snips are equipped with cutting-edge photon emitters that can slice through even the densest of materials. Their speed and accuracy make them the go-to choice for those who value calculated swiftness in the Galactic Showdown. -->

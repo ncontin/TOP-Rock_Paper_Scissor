@@ -1,3 +1,11 @@
+const winner = document.querySelector(".winner");
+const btns = document.querySelectorAll("button");
+const choice = document.querySelector(".choice");
+const choiceResult = document.querySelector(".choice-result");
+const restart = document.querySelector("#restart");
+let playerScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
 
@@ -9,14 +17,6 @@ function getComputerChoice() {
         return "Scissors";
     }
 }
-
-let playerScore = 0;
-let computerScore = 0;
-
-const winner = document.querySelector(".winner");
-const btns = document.querySelectorAll("button");
-const choice = document.querySelector(".choice");
-const choiceResult = document.querySelector(".choice-result");
 
 function playRound(playerSelection, computerSelection) {
     choice.textContent = `Player choice: ${playerSelection}, Computer choice: ${computerSelection}`;
@@ -56,7 +56,6 @@ function game() {
     function gameRound(e) {
         let playerSelection = e.target.getAttribute("data-choice");
         if (!playerSelection) {
-            // Try getting the data-choice attribute from the parent (button)
             playerSelection = e.target.closest("button").getAttribute("data-choice");
         }
 
@@ -86,5 +85,9 @@ function game() {
         }
     }
 }
+
+restart.addEventListener("click", () => {
+    location.reload();
+});
 
 game();

@@ -9,16 +9,6 @@
     animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
 }
 
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
 @-webkit-keyframes focus-in-contract-bck {
     0% {
         letter-spacing: 1em;
@@ -88,4 +78,39 @@ img {
     text-align: center;
 
     bottom: 0;
+}
+
+:root {
+    --header: 3rem;
+    --footer: 40px;
+    --main: calc(100vh - calc(var(--header) + var(--footer)));
+}
+
+#container {
+    border: 0px solid transparent;
+    height: 100vh;
+    color: white;
+    background-image: url(img/Interstellar.png);
+    background-size: 100% auto;
+    background-position: center;
+}
+#container > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    height: var(--header);
+    background: #111111;
+}
+#mainContent {
+    height: var(--main);
+    margin-right: auto;
+    margin-left: auto;
+}
+#footer {
+    height: var(--footer);
+    background: #232323;
 }

@@ -15,41 +15,57 @@
                 <h2 class="header sub-title">The Galactic Showdown!</h2>
             </div>
             <main id="mainContent">
-                <section class="element">
-                    <h2>Quazar Boulder (Rock)</h2>
-                    <p>Unbreakable force of nature from a collapsing star.</p>
-                </section>
+                <div class="players-wrapper text-pop-up-top">
+                    <div class="head-card slide-in-left">
+                        <img src="img/player.png" alt="player" class="players-img" />
+                        <p>Intergalactic Voyager:<span class="player-score"></span></p>
+                    </div>
+                    <div class="vs-card slide-in-bck-center">
+                        <p class="vs-text">VS</p>
+                    </div>
+                    <div class="head-card slide-in-right">
+                        <img src="img/alien.png" alt="alien" class="players-img" />
+                        <p>Zylar the Enigmatic:<span class="computer-score"></span></p>
+                    </div>
+                </div>
+                <div class="battle">
+                    <p class="choice-text slide-in-elliptic-top-fwd">Choose your Weapon:</p>
 
-                <section class="element">
-                    <h2>Astro Wrap (Paper)</h2>
-                    <p>Delicate yet potent material from sentient space vines.</p>
-                </section>
+                    <div class="element-container">
+                        <section class="element roll-in-left">
+                            <h2 class="weapons-title">Quazar Boulder (Rock)</h2>
 
-                <section class="element">
-                    <h2>Laser Snips (Scissors)</h2>
-                    <p>Sharpest and fastest pair forged in a neutron star's orbit.</p>
-                </section>
-                <button id="rock" data-choice="rock">
-                    Quazar Boulder
-                    <img src="/img/rock.png" alt="rock" />
-                </button>
-                <button id="paper" data-choice="paper">
-                    Astro Wrap
-                    <img src="img/paper.png" alt="paper" />
-                </button>
-                <button id="scissors" data-choice="scissors">
-                    Laser Snips
-                    <img src="/img/scissors.png" alt="scissors" />
-                </button>
+                            <button class="weapon-btn rotate-scale-down" data-choice="rock">
+                                <img src="/img/rock.png" alt="rock" class="weapons-img" />
+                            </button>
+                            <p class="weapon-text">Unbreakable force of nature from a collapsing star.</p>
+                        </section>
 
-                <div>player score = <span class="player-score"></span></div>
-                <div>computer score = <span class="computer-score"></span></div>
-                <br />
-                <div class="choice"></div>
-                <div class="choice-result"></div>
-                <h1 class="winner"></h1>
-                <button id="restart">Restart</button>
+                        <section class="element roll-in-bottom">
+                            <h2 class="weapons-title">Astro Wrap (Paper)</h2>
+
+                            <button class="weapon-btn rotate-scale-down" data-choice="paper">
+                                <img src="img/paper.png" alt="paper" class="weapons-img" />
+                            </button>
+                            <p class="weapon-text">Delicate yet potent material from sentient space vines.</p>
+                        </section>
+
+                        <section class="element roll-in-right">
+                            <h2 class="weapons-title">Laser Snips (Scissors)</h2>
+
+                            <button class="weapon-btn rotate-scale-down" data-choice="scissors">
+                                <img src="/img/scissors.png" alt="scissors" class="weapons-img" />
+                            </button>
+                            <p class="weapon-text">Sharpest and fastest pair forged in a neutron star's orbit.</p>
+                        </section>
+                    </div>
+                    <p class="tracking-in-expand-fwd-bottom">First to score 5 points conquers the galaxy</p>
+                    <div class="choice"></div>
+                    <div class="choice-result"></div>
+                    <h1 class="winner"></h1>
+                </div>
             </main>
+            <button id="restart">Restart</button>
             <footer id="footer">
                 <p class="copyright">&copy; 2023 ncontin. All rights reserved.</p>
             </footer>

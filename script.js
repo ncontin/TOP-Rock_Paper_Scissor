@@ -76,7 +76,7 @@ function game() {
             if (playerScore > computerScore) {
                 winner.textContent = "Player Won";
             } else if (computerScore > playerScore) {
-                winner.textContent = "Computer Won";
+                winner.textContent = "Zylar Won";
             }
 
             btns.forEach((button) => {

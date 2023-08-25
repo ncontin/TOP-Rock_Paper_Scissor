@@ -19,7 +19,7 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    choice.textContent = `Player choice: ${playerSelection}, Computer choice: ${computerSelection}`;
+    choice.textContent = `Player choice: ${playerSelection} - Zylar choice: ${computerSelection}`;
     if (playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === "paper") {
         computerScore++;
         choiceResult.textContent = "You Lose! Paper beats Rock";

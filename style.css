@@ -6,8 +6,18 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+    background-position: center center;
 
+    animation: zoom 0.15s infinite;
+}
+@keyframes zoom {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: 400% 400%;
+    }
+}
 body {
     color: white;
     font-family: "Orbitron", sans-serif;
@@ -230,6 +240,15 @@ body {
 .winner {
     font-size: 2rem;
     color: greenyellow;
+}
+
+@keyframes shrink {
+    0% {
+        background-size: 110% 110%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
 }
 
 .slide-in-left {

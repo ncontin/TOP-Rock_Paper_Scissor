@@ -61,6 +61,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 #restart {
     width: 100px;
@@ -230,6 +231,7 @@ body {
     font-size: 2rem;
     color: greenyellow;
 }
+
 .slide-in-left {
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
     animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;

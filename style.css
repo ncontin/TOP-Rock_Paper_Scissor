@@ -148,8 +148,11 @@ body {
     font-size: 2rem;
     color: deeppink;
 }
+.bottom-wrapper {
+    text-align: center;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .players-wrapper {
         flex-direction: column;
         align-items: center;
@@ -158,6 +161,56 @@ body {
 
     .head-card {
         margin: 10px 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    .sub-title {
+        font-size: 2rem;
+    }
+    .choice-text {
+        font-size: 1rem;
+    }
+
+    .players-img {
+        width: 120px;
+    }
+    .element-container {
+        width: 100%;
+    }
+    .bottom-wrapper {
+        text-align: center;
+    }
+    .element {
+        width: 80%;
+    }
+
+    .battle {
+        gap: 10px;
+    }
+
+    .weapon-btn {
+        width: 100px;
+        height: 100px;
+        font-size: 1rem;
+    }
+
+    .weapon-text,
+    .weapons-title {
+        display: none;
+    }
+
+    .vs-card {
+        width: 30px;
+    }
+
+    .vs-text {
+        font-size: 1rem;
+    }
+
+    .weapons-img {
+        width: 100%;
     }
 }
 .weapon-btn {
